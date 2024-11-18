@@ -1,0 +1,8 @@
+<h2>Информация для администратора</h2>
+<table border="1">
+	<% @user_file.each_line do |line| %>
+	<tr><td><%= line %></td></tr>
+	<% end %>
+</table>
+
+<%= @user_file.close %>
